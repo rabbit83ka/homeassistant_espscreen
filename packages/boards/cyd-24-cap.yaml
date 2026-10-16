@@ -111,17 +111,3 @@ display:
       width: 240
       height: 320
       
-sensor:
-  - platform: adc
-    pin: GPIO34
-    id: light_sensor_volts
-    name: "Lichtsensor Spannung"
-    update_interval: 1s
-    attenuation: 12db
-    filters:
-      - median:
-          window_size: 5
-          send_every: 1
-      - sliding_window_moving_average:
-          window_size: 10
-          send_every: 1
