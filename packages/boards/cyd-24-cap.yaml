@@ -108,8 +108,8 @@ display:
       - [0xB1, 0x00, 0x10]
 
     dimensions:
-      width: 320
-      height: 240
+      width: 240
+      height: 320
       
 sensor:
   - platform: adc
