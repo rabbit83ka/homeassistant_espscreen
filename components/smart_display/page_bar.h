@@ -165,7 +165,7 @@ inline void dots(lv_obj_t *row, int current, int total) {
   }
   if (label) {
     if (words) {
-      char b[16];
+      char b[32]; //was 16
       snprintf(b, sizeof(b), "%d / %d", current + 1, total);
       lv_label_set_text(label, b);
       lv_obj_set_style_text_color(label, theme::color(theme::MUTED), 0);
